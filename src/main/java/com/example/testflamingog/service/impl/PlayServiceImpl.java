@@ -4,14 +4,14 @@ import com.example.testflamingog.domain.Game;
 import com.example.testflamingog.domain.enums.GameStatus;
 import com.example.testflamingog.repository.impl.GameRepositoryImpl;
 import com.example.testflamingog.service.PlayService;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 import static com.example.testflamingog.domain.enums.GameStatus.FAILURE;
 
-@Component
+@Service
 public class PlayServiceImpl implements PlayService {
 
     private final GameRepositoryImpl gameRepositoryImpl;
